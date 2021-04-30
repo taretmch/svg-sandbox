@@ -9,7 +9,38 @@
   <body>
     <main class="main-content">
       <div class="content">
-        <div class="content__section header">SVG 練習ページ</div>
+        <h1 class="content__header">SVG 練習ページ</h1>
+
+        <div class="content__section paths">
+          <div class="paths__item header">Path</div>
+          <div class="paths__item rectangle">
+            <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+              <path d="M 10 10 H 90 V 90 H 10 L 10 10" />
+
+              <circle cx="10" cy="10" r="2" fill="red" />
+              <circle cx="90" cy="90" r="2" fill="red" />
+              <circle cx="90" cy="10" r="2" fill="red" />
+              <circle cx="10" cy="90" r="2" fill="red" />
+            </svg>
+          </div>
+        </div>
+
+        <div class="content__section sine">
+          <div class="sine__item header">f(x) = sin x</div>
+
+          <div class="sine__item graph">
+            <svg
+              x       = "-200"
+              y       = "-100"
+              width   = "400"
+              height  = "200"
+              viewBox = "-200 -100 400 200"
+              style   = "background: #e5e5e5">
+              <path d="M 0 0      C 12.5 -20,   37.5 -55, 50,  -70.7" stroke="black" fill="transparent"/>
+              <path d="M 50 -70.7 C 62.5 -83.1, 87.5 -98, 100, -100"  stroke="black" fill="transparent"/>
+            </svg>
+          </div>
+        </div>
       </div>
     </main>
   </body>
