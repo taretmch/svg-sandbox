@@ -2,7 +2,11 @@
   "name": "svg-sandbox",
   "version": "1.0.0",
   "description": "Sandbox for web page which uses svg",
-  "main": "index.js",
+  "main": "webpack.config.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "watch": "webpack --mode development --watch"
+  },
   "repository": "git@github.com:taretmch/svg-sandbox.git",
   "author": "taretmch",
   "license": "MIT",
